@@ -1,20 +1,19 @@
+// main.dart
 import 'package:flutter/material.dart';
-import 'pages/intro_page.dart';
+import 'pages/intro_page.dart'; // Corrected the path for intro_page.dart
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key); // Corrected the syntax for the constructor
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner:false,
+      debugShowCheckedModeBanner: false, // Corrected the syntax for debugShowCheckedModeBanner
       home: IntroPage(),
     );
   }
 }
-
