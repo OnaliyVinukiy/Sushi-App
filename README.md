@@ -4,5 +4,6 @@
 
 <h4>Languages Used:</h4>
 <ul>
-  <li></li>
+  <li>Flutter</li>
+  <li>Dart</li>
 </ul>
