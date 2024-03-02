@@ -11,9 +11,16 @@ class MyButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Color.fromARGB(212, 135, 81, 77),
-      ),
-      child: Text(text)
+        color: Color.fromARGB(109, 140, 94,91)),
+        padding:EdgeInsets.all(20),
+        child: Row(
+          children: [
+            Text(
+              text,
+              style: TextStyle(color: Colors.white),
+            ),
+          ],
+        ),
     );
   }
 }
