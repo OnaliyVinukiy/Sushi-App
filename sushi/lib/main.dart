@@ -1,5 +1,6 @@
 // main.dart
 import 'package:flutter/material.dart';
+import 'package:sushi/pages/menu_page.dart';
 import 'pages/intro_page.dart'; // Corrected the path for intro_page.dart
 
 void main() {
@@ -14,6 +15,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false, 
       home: IntroPage(),
+      routes:{
+        '/intropage': (context) => const IntroPage(),
+        '/menupage' :(context) =>  const MenuPage(),
+      }
     );
   }
 }
