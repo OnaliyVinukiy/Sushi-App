@@ -17,6 +17,12 @@ class _MenuPageState extends State<MenuPage> {
           Icons.menu,
           color: Colors.grey[900],
         ),
+        title: Text(
+          'Tokyo',
+          style: TextStyle(
+            color: Colors.grey[900],
+          ),
+        )
       ),
     );
   }
