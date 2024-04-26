@@ -11,6 +11,7 @@ class _MenuPageState extends State<MenuPage> {
     return Scaffold(
       backgroundColor: Colors.grey[300],
       appBar: AppBar(
+        
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: Icon(
@@ -24,6 +25,18 @@ class _MenuPageState extends State<MenuPage> {
           ),
         )
       ),
+      body: Column(children: [
+        //promo banner
+
+
+        //search bar
+
+
+        //menu list
+
+
+        //popular food
+      ],)
     );
   }
 }
