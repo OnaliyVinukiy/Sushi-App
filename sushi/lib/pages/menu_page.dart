@@ -27,7 +27,11 @@ class _MenuPageState extends State<MenuPage> {
       ),
       body: Column(children: [
         //promo banner
-
+          Container(
+            child: Row(children: [
+              //message
+              Text('Get 20% Promo'),],),
+          )
 
         //search bar
 
