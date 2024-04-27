@@ -35,9 +35,13 @@ class _MenuPageState extends State<MenuPage> {
               color: primaryColor,
               borderRadius: BorderRadius.circular(20),),
               margin: const EdgeInsets.symmetric(horizontal: 25),
-            padding:const EdgeInsets.all(25),
-            child: Row(children: [
+              padding:const EdgeInsets.symmetric(vertical:25,horizontal: 30),
+              child: Row(
+              mainAxisAlignment:MainAxisAlignment.spaceBetween,
+
+              children: [
               Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
               //message
               const Text('Get 20% Promo'),
@@ -53,10 +57,13 @@ class _MenuPageState extends State<MenuPage> {
               ),
               
               //image
-              Image.asset('lib/images/sushi.png'),
+              Image.asset('lib/images/sushi1.png', height:100),
               ],
               ),
-          )
+          ),
+          const SizedBox(height: 20,),
+
+
 
         //search bar
 
