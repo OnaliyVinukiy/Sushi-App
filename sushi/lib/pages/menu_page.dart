@@ -49,7 +49,13 @@ class _MenuPageState extends State<MenuPage> {
               //image
 
               
-              ],)],),
+              ],
+              ),
+              
+              //image
+              Image.asset('lib/images/sushi.png'),
+              ],
+              ),
           )
 
         //search bar
