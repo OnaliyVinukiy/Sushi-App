@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:sushi/components/button.dart';
 import 'package:sushi/themes/colors.dart';
 class MenuPage extends StatefulWidget {
@@ -31,24 +32,38 @@ class _MenuPageState extends State<MenuPage> {
         //promo banner
           Container(
             decoration: BoxDecoration(
-              color: primaryColor,),
-              
+              color: primaryColor,
+              borderRadius: BorderRadius.circular(20),),
               margin: const EdgeInsets.symmetric(horizontal: 25),
-           
-            child: Row(children: [
+              padding:const EdgeInsets.symmetric(vertical:25,horizontal: 30),
+              child: Row(
+              mainAxisAlignment:MainAxisAlignment.spaceBetween,
+
+              children: [
               Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
               //message
-              Text('Get 20% Promo'),
+              const Text('Get 20% Promo'),
               
+              const SizedBox(height: 20,),
               //redeem button
                 MyButton(text: "Redeem", onTap: (){},),
 
               //image
 
               
-              ],)],),
-          )
+              ],
+              ),
+              
+              //image
+              Image.asset('lib/images/sushi1.png', height:100),
+              ],
+              ),
+          ),
+          const SizedBox(height: 20,),
+
+
 
         //search bar
 
