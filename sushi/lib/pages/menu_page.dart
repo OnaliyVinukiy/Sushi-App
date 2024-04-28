@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:sushi/components/button.dart';
 import 'package:sushi/themes/colors.dart';
 class MenuPage extends StatefulWidget {
@@ -41,10 +42,13 @@ class _MenuPageState extends State<MenuPage> {
 
               children: [
               Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                
                 children: [
               //message
-              const Text('Get 20% Promo'),
+              Text('Get 20% Promo', style:GoogleFonts.dmSerifDisplay(
+                fontSize: 20,
+                color: Colors.white,
+              ),),
               
               const SizedBox(height: 20,),
               //redeem button
