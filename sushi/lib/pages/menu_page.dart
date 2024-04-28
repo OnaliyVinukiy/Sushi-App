@@ -42,7 +42,7 @@ class _MenuPageState extends State<MenuPage> {
 
               children: [
               Column(
-                
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
               //message
               Text('Get 20% Promo', style:GoogleFonts.dmSerifDisplay(
@@ -65,12 +65,16 @@ class _MenuPageState extends State<MenuPage> {
               ],
               ),
           ),
-          const SizedBox(height: 20,),
+          const SizedBox(height: 25,),
 
 
 
         //search bar
-
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 25.0),
+        child: TextField(
+          decoration: InputDecoration(border: OutlineInputBorder(borderSide: BorderSide(color:Colors.white),borderRadius: BorderRadius.circular(20),),
+          focusedBorder:OutlineInputBorder(borderSide: BorderSide(color:Colors.white),borderRadius: BorderRadius.circular(20),)),),),
 
         //menu list
 
