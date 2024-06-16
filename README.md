@@ -5,7 +5,7 @@
 <h4>Languages Used:</h4>
 <ul>
   <li>Flutter</li>
-  <li></li>
+  <li>Dart</li>
 </ul>
 
 <h4>Status: Ongoing</h4>
